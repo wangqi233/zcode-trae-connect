@@ -1,0 +1,58 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Node 22.5+ is required: session persistence uses the built-in node:sqlite
+          # module, which does not exist in earlier releases.
+          - os: ubuntu-latest
+            node: '22'
+          - os: ubuntu-latest
+            node: '24'
+          - os: windows-latest
+            node: '22'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Syntax check source files
+        run: |
+          for f in src/*.js; do node --check "$f"; done
+        shell: bash
+
+  hygiene:
+    # Fails if account material or runtime state ever gets committed. The repository
+    # ships without any credentials, so this is a hard gate rather than a warning.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject committed credentials / runtime state
+        run: |
+          set -e
+          fail=0
+          if git ls-files | grep -qE '^accounts/account-.*\.json$'; then
+            echo "::error::account pool member committed (contains plaintext tokens)"
+            fail=1
+          fi
+          if git ls-files | grep -qE '^\.env$|^logs/|^captures/|^output/'; then
+            echo "::error::local env or runtime artifact committed"
+            fail=1
+          fi
+          if git grep -nE 'eyJhbGciOi[A-Za-z0-9_-]{10,}' -- ':!package-lock.json' ':!tests/*'; then
+            echo "::error::a JWT-like string is committed"
+            fail=1
+          fi
+          exit $fail

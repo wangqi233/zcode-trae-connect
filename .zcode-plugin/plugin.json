@@ -1,0 +1,38 @@
+{
+  "name": "zcode-trae-connect",
+  "version": "0.1.0",
+  "description": "Bring Trae desktop-app models (Trae CN & TRAE SOLO CN, plus an optional remote laptop Trae) into ZCode as OpenAI-compatible providers through the local trae2api gateway — zero configuration and safe against server-side token-family rotation.",
+  "description_i18n": {
+    "en": "Bring Trae desktop-app models (Trae CN & TRAE SOLO CN, plus an optional remote laptop Trae) into ZCode as OpenAI-compatible providers through the local trae2api gateway — zero configuration and safe against server-side token-family rotation.",
+    "zh-CN": "通过本地 trae2api 网关，把 Trae 桌面 App 的模型（Trae CN、TRAE SOLO CN，可选远程笔记本 Trae）零配置接入 ZCode，作为 OpenAI 兼容供应商，并规避服务端令牌族自动轮换的风险。"
+  },
+  "author": {
+    "name": "zcode-trae-connect contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "trae",
+    "trae2api",
+    "openai-compatible",
+    "provider",
+    "zcode"
+  ],
+  "skills": "skills",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "node",
+            "args": [
+              "${ZCODE_PLUGIN_ROOT}/hooks/service-ensure.mjs"
+            ],
+            "timeoutMs": 90000,
+            "statusMessage": "Ensuring the Trae gateway endpoints (:19960/:19961) are up"
+          }
+        ]
+      }
+    ]
+  }
+}

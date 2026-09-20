@@ -1,0 +1,206 @@
+[
+  {
+    "config_name": "Doubao-Seed-Evolving",
+    "is_default": false
+  },
+  {
+    "config_name": "Doubao-Seed-2.1-Pro",
+    "is_default": false
+  },
+  {
+    "config_name": "Doubao-Seed-2.1-Turbo",
+    "is_default": false
+  },
+  {
+    "config_name": "Doubao_1_6",
+    "is_default": true
+  },
+  {
+    "config_name": "Doubao-Seed-Code",
+    "is_default": true
+  },
+  {
+    "config_name": "glm-5.2_advisor_doubao",
+    "is_default": false
+  },
+  {
+    "config_name": "kimi-k2.8-preview",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5.3-flash",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5.3",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5.2",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5.1",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5",
+    "is_default": false
+  },
+  {
+    "config_name": "DeepSeek-V4-Flash-Official",
+    "is_default": false
+  },
+  {
+    "config_name": "DeepSeek-V4-Flash",
+    "is_default": false
+  },
+  {
+    "config_name": "DeepSeek-V4-Pro-Official",
+    "is_default": false
+  },
+  {
+    "config_name": "DeepSeek-V4-Pro",
+    "is_default": false
+  },
+  {
+    "config_name": "kimi-k3",
+    "is_default": false
+  },
+  {
+    "config_name": "kimi-k2.7-code",
+    "is_default": false
+  },
+  {
+    "config_name": "minimax-m3",
+    "is_default": false
+  },
+  {
+    "config_name": "qwen3.8-flash",
+    "is_default": false
+  },
+  {
+    "config_name": "qwen3.8-max",
+    "is_default": false
+  },
+  {
+    "config_name": "qwen-3.7-plus",
+    "is_default": false
+  },
+  {
+    "config_name": "doubao-for-auto",
+    "is_default": false
+  },
+  {
+    "config_name": "minimax-m2.1",
+    "is_default": false
+  },
+  {
+    "config_name": "minimax-m2",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-5.1_advisor",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-4.7",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-4.7-auto",
+    "is_default": false
+  },
+  {
+    "config_name": "glm-4.6",
+    "is_default": false
+  },
+  {
+    "config_name": "kimi-k2",
+    "is_default": false
+  },
+  {
+    "config_name": "qwen-3.5",
+    "is_default": false
+  },
+  {
+    "config_name": "qwen3-coder",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_placeholder",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_200k_text",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_200k",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_1M_text",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_1M",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_gemini",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_vercel",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_kimi",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_vercel_gemini",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_no-fc",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_gpt-5",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_deepseek_chat",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_deepseek_reasoner",
+    "is_default": false
+  },
+  {
+    "config_name": "custom_model_deepseek_v4",
+    "is_default": false
+  },
+  {
+    "config_name": "summary",
+    "is_default": false
+  },
+  {
+    "config_name": "fast_apply",
+    "is_default": false
+  },
+  {
+    "config_name": "fast_apply_new",
+    "is_default": false
+  },
+  {
+    "config_name": "title_generation",
+    "is_default": false
+  },
+  {
+    "config_name": "input_optimization",
+    "is_default": false
+  }
+]

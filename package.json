@@ -1,0 +1,42 @@
+{
+  "name": "trae2api",
+  "version": "1.0.0",
+  "description": "Trae (国内版 / 国际版) → OpenAI & Anthropic compatible local API gateway, with multi-account pool and per-request realm routing",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run tests/server",
+    "test:unit": "vitest run tests/server",
+    "test:e2e": "vitest run tests/e2e"
+  },
+  "keywords": [
+    "trae",
+    "trae-solo",
+    "openai-compatible",
+    "anthropic",
+    "api-gateway",
+    "llm-proxy"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "https-proxy-agent": "^9.0.0",
+    "marked": "^18.0.5",
+    "node-fetch": "^2.7.0",
+    "socks-proxy-agent": "^10.0.0",
+    "ulid": "^3.0.2"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.10",
+    "playwright": "^1.61.0"
+  },
+  "overrides": {
+    "qs": "^6.16.0"
+  }
+}

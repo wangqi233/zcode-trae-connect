@@ -1,0 +1,49 @@
+{
+  "_comment": "SG 国际版目录快照 2026-09-17。账号 7480937676159173649 (Free)，API host coresg-normal.trae.ai。仅存 config_name 名单；display_name/capability 等完整字段需重新 get_detail_param。结论：目录随 x-ide-version 产品身份变化，见 SOLO_PARITY.md 国际版节。",
+  "solo_work_lite": {
+    "identity_0_1_65_solo": [
+      "gpt-5.4", "gpt-5.2",
+      "custom_model_placeholder", "custom_model_1M_text", "custom_model_1M",
+      "custom_model_kimi", "custom_model_gemini", "custom_model_claude",
+      "custom_model_gpt-5", "custom_model_no-fc",
+      "custom_model_deepseek_chat", "custom_model_deepseek_reasoner", "custom_model_deepseek_v4"
+    ],
+    "identity_3_5_91_classic": [
+      "gpt-5.2",
+      "custom_model_placeholder", "custom_model_1M_text", "custom_model_1M",
+      "custom_model_kimi", "custom_model_gemini", "custom_model_claude",
+      "custom_model_gpt-5", "custom_model_no-fc",
+      "custom_model_deepseek_chat", "custom_model_deepseek_reasoner", "custom_model_deepseek_v4"
+    ]
+  },
+  "chat_v3": {
+    "identity_0_1_65_solo": [
+      "Dola-Seed-2.0-Code", "gpt-6-astra", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna",
+      "gpt-5.5", "gpt-5.4", "gpt-5.2", "glm-5.2", "deepseek-v3.2", "kimi-k2.5",
+      "gemini-3.1-pro", "gemini-3-flash-premium", "gemini-3.1-pro-paygo", "gemini-3.1-pro-auto",
+      "gemini-3-flash-auto", "doubao-for-auto", "gemini_2.5_flash_premium",
+      "minimax-m3", "minimax-m2.7",
+      "gpt-5.2-codex-paygo", "gpt-5.1-paygo", "gpt-5-paygo",
+      "custom_model_placeholder", "custom_model_200k_text", "custom_model_200k",
+      "custom_model_1M_text", "custom_model_1M", "custom_model_gemini", "custom_model_vercel",
+      "custom_model_kimi", "custom_model_vercel_gemini", "custom_model_no-fc", "custom_model_gpt-5",
+      "custom_model_deepseek_chat", "custom_model_deepseek_reasoner", "custom_model_deepseek_v4",
+      "summary", "fast_apply", "input_optimization", "title_generation"
+    ],
+    "identity_3_5_91_classic": [
+      "Dola-Seed-2.0-Code", "gpt-5.4", "gpt-5.2", "deepseek-v3.2", "kimi-k2.5",
+      "gemini-3.1-pro", "gemini-3-flash-premium", "gemini-3.1-pro-paygo", "gemini-3.1-pro-auto",
+      "gemini-3-flash-auto", "doubao-for-auto", "gemini_2.5_flash_premium",
+      "minimax-m3", "minimax-m2.7",
+      "gpt-5.2-codex-paygo", "gpt-5.1-paygo", "gpt-5-paygo",
+      "custom_model_placeholder", "custom_model_200k_text", "custom_model_200k",
+      "custom_model_1M_text", "custom_model_1M", "custom_model_gemini", "custom_model_vercel",
+      "custom_model_kimi", "custom_model_vercel_gemini", "custom_model_no-fc", "custom_model_gpt-5",
+      "custom_model_deepseek_chat", "custom_model_deepseek_reasoner", "custom_model_deepseek_v4",
+      "summary", "fast_apply", "input_optimization", "title_generation"
+    ]
+  },
+  "entitlement_1005_blocked_free": [
+    "gpt-6-astra", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna", "gpt-5.5", "glm-5.2"
+  ]
+}

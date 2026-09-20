@@ -1,0 +1,5 @@
+# Windows 脚本必须 CRLF：cmd 对 LF-only 的 bat 有静默解析 bug
+# （跳过中间的 set 行；甚至把 `rem A -> B` 的 -> 当重定向执行，
+#   实测在两台机器上各创建过一个名为 OpenAI-compatible 的空文件）
+*.bat text eol=crlf
+*.vbs text eol=crlf
