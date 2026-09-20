@@ -17,22 +17,5 @@
     "provider",
     "zcode"
   ],
-  "skills": "skills",
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "process",
-            "command": "node",
-            "args": [
-              "${ZCODE_PLUGIN_ROOT}/hooks/service-ensure.mjs"
-            ],
-            "timeoutMs": 90000,
-            "statusMessage": "Ensuring the Trae gateway endpoints (:19960/:19961) are up"
-          }
-        ]
-      }
-    ]
-  }
+  "skills": "skills"
 }
